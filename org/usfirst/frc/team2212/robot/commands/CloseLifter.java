@@ -6,9 +6,9 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class LifterDown extends Command {
+public class CloseLifter extends Command {
 
-	public LifterDown() {
+	public CloseLifter() {
 		requires(lifter);
 	}
 
@@ -20,19 +20,19 @@ public class LifterDown extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
-		lifter.down();
+		lifter.close();
 	}
 
 	// Make this return true when this Command no longer needs to run execute()
 	@Override
 	protected boolean isFinished() {
-		return lifter.arrivedAtBottom();
+		return lifter.closed();
 	}
 
 	// Called once after isFinished returns true
 	@Override
 	protected void end() {
-		lifter.stopY();
+		lifter.stopX();
 	}
 
 	// Called when another command which requires one or more of the same

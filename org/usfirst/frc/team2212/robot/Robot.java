@@ -52,8 +52,10 @@ public class Robot extends IterativeRobot {
 				RobotMap.METERS_TO_GO_BACK_AFTER_PUTTING_DOWN_A_STACK,
 				RobotMap.KP, RobotMap.KI, RobotMap.KD, RobotMap.DT,
 				RobotMap.THRESHOLD, driveTrain, driveTrain);
-		lifter = new Lifter(RobotMap.LIFTER_RELAY_PORT,
-				RobotMap.LIFTER_UPPER_DI_PORT, RobotMap.LIFTER_LOWER_DI_PORT);
+		lifter = new Lifter(RobotMap.LIFTER_YRELAY_PORT,
+				RobotMap.LIFTER_XRELAY_PORT, RobotMap.LIFTER_UPPER_DI_PORT,
+				RobotMap.LIFTER_LOWER_DI_PORT, RobotMap.LIFTER_OPENED_DI_PORT,
+				RobotMap.LIFTER_CLOSED_DI_PORT);
 		// instantiate the command used for the autonomous period
 		autonomousCommand = new Autonomous();
 	}

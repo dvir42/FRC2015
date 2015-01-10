@@ -9,19 +9,22 @@ package org.usfirst.frc.team2212.robot;
 public class RobotMap {
 
 	// Drive Ports
-	public static final int FRONT_LEFT_VICTOR_PORT = 0;
-	public static final int BACK_LEFT_VICTOR_PORT = 1;
-	public static final int FRONT_RIGHT_VICTOR_PORT = 2;
-	public static final int BACK_RIGHT_VICTOR_PORT = 3;
-	public static final int FRONT_VICTOR_PORT = 4;
-	public static final int REAR_VICTOR_PORT = 5;
-	public static final int ENCODER_PORT_1 = 0;
-	public static final int ENCODER_PORT_2 = 1;
+	public static final int FRONT_LEFT_VICTOR_PORT = -1;
+	public static final int BACK_LEFT_VICTOR_PORT = -1;
+	public static final int FRONT_RIGHT_VICTOR_PORT = -1;
+	public static final int BACK_RIGHT_VICTOR_PORT = -1;
+	public static final int FRONT_VICTOR_PORT = -1;
+	public static final int REAR_VICTOR_PORT = -1;
+	public static final int ENCODER_PORT_1 = -1;
+	public static final int ENCODER_PORT_2 = -1;
 
 	// Lifter Ports
-	public static final int LIFTER_RELAY_PORT = 0;
-	public static final int LIFTER_UPPER_DI_PORT = 0;
-	public static final int LIFTER_LOWER_DI_PORT = 1;
+	public static final int LIFTER_YRELAY_PORT = -1;
+	public static final int LIFTER_XRELAY_PORT = -1;
+	public static final int LIFTER_UPPER_DI_PORT = -1;
+	public static final int LIFTER_LOWER_DI_PORT = -1;
+	public static final int LIFTER_OPENED_DI_PORT = -1;
+	public static final int LIFTER_CLOSED_DI_PORT = -1;
 
 	// PID Constants
 	public static final double KP = 0;
