@@ -34,7 +34,7 @@ public class PID extends Subsystem {
 		p = KP * error;
 		i += KI * DT * error;
 		d = KD * (prevError - error) / DT;
-		OUT.set(p + i + d);
+		OUT.set(p + i + d, this.getCurrentCommand().getName());
 		long prevTime = System.currentTimeMillis();
 		while (System.currentTimeMillis() - prevTime < DT)
 			prevTime = System.currentTimeMillis();

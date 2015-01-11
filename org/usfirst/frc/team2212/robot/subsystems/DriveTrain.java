@@ -56,9 +56,12 @@ public class DriveTrain extends Subsystem implements PIDIn, PIDOut {
 	}
 
 	@Override
-	public void set(double output) {
-		// TODO: Make this work for different PIDs.
-		moveYX(0, output);
+	public void set(double output, String name) {
+		if (name.equals("DriveToNextYellowTote"))
+			moveYX(0, output);
+		else if (name.equals("DriveToAutonomousZone")
+				|| name.equals("DriveBackALittle"))
+			moveYX(output, 0);
 	}
 
 	@Override
