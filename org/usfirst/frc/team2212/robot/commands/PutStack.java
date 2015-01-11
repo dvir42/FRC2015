@@ -9,6 +9,7 @@ public class PutStack extends CommandGroup {
 
 	public PutStack() {
 		addSequential(new LifterDown());
+		addSequential(new OpenLifter());
 		addSequential(new DriveBackALittle());
 	}
 }
